@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+.app {
+  padding: 1% 25%;
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app .app__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app .app__content-input {
+  position: absolute;
+  left: 0;
+  top: 150px;
+}
+
+.app .app__content-button {
+  left: 325px;
+  top: 250px;
+  position: absolute;
+}
+
+.app .app__content-balance {
+  position: absolute;
+  transition: all 1s ease-in;
+  left: 290px;
+  top: 420px;
+}
+
+.app .app__content-balance--none {
+  visibility: hidden;
+}
+
+.app .app__logo-animation--none {
+  position: absolute;
+  left: 340px;
+  top: 0;
+}
+
+.app .app__logo-animated {
+  position: absolute;
+  left: 345px;
+  top: 0;
+  animation-name: logo;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+@keyframes logo {
+  0% {
+    left: 360px;
+    top: 0;
+    transition: all 2s ease-in;
+    transform: rotate(30deg);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  20% {
+    top: 15px;
+    left: 415px;
+    transition: all 2s ease-in;
+    transform: rotate(160deg);
   }
-  to {
-    transform: rotate(360deg);
+  30% {
+    top: 30px;
+    left: 435px;
+    transition: all 2s ease-in;
+    transform: rotate(240deg);
+  }
+  40% {
+    top: 60px;
+    left: 455px;
+    transition: all 2s ease-in;
+    transform: rotate(320deg);
+  }
+  50% {
+    top: 100px;
+    left: 455px;
+    transition: all 2s ease-in;
+    transform: rotate(400deg);
+  }
+  60% {
+    top: 140px;
+    left: 455px;
+    transition: all 2s ease-in;
+    transform: rotate(480deg);
+  }
+  70% {
+    top: 170px;
+    left: 455px;
+    transition: all 2s ease-in;
+    transform: rotate(560deg);
+  }
+  80% {
+    top: 200px;
+    left: 455px;
+    transition: all 2s ease-in;
+    transform: rotate(640deg);
+  }
+  90% {
+    top: 235px;
+    left: 425px;
+    transition: all 2s ease-in;
+    transform: rotate(720deg);
+  }
+  100% {
+    top: 300px;
+    left: 340px;
+    transition: all 2s ease-in;
+    transform: rotate(900deg);
   }
 }
